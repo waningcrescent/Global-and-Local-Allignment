@@ -20,9 +20,9 @@ for i in range(n):
     for j in range(m):
         # match_score : check if the letter matches and assign match/mismatch (replace with 0 if value is negative)
         if s1[i] == s2[j]:
-            match_score = max(0, Match)
+            match_score =  Match
         else:
-            match_score = max(0, Mismatch)
+            match_score = Mismatch
 
         # choosing the max value for each cell (ensuring value !=0), thereby generating the matrix :
         matrix[i + 1][j + 1] = max(max(0, matrix[i][j] + match_score), max(0, matrix[i][j + 1] + Gap),
